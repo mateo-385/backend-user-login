@@ -2,7 +2,8 @@ export function Login() {
   const $buttonRegister = document.getElementById('button-register')
   const $buttonLogin = document.getElementById('button-login')
 
-  $buttonRegister.addEventListener('click', () => {
+  $buttonRegister.addEventListener('click', (event) => {
+    event.preventDefault()
     window.location.href = '/register'
   })
 

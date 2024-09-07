@@ -79,15 +79,15 @@ export function RegisterPage() {
   $buttons.classList.add('flex', 'flex-col')
   $buttonRegister.classList.add(
     'btn',
-    'btn-outline',
-    'btn-primary',
+    'btn-secondary',
     'rounded-full',
     'text-base'
   )
   $divider.classList.add('divider', 'px-5', 'my-3', 'text-xs')
   $buttonLogin.classList.add(
     'btn',
-    'btn-secondary',
+    'btn-outline',
+    'btn-primary',
     'rounded-full',
     'text-base'
   )

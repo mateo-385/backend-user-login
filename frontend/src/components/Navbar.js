@@ -131,6 +131,12 @@ export function Navbar() {
       window.location.href = '/login'
     }
   })
+  $brandLink.addEventListener('click', async () => {
+    const pathname = window.location.pathname
+    if (pathname != '/home') {
+      window.location.href = '/home'
+    }
+  })
 
   return $navbar
 }

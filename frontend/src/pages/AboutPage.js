@@ -1,5 +1,6 @@
 export function AboutPage() {
   // Create elements
+  const $main = document.createElement('main')
   const $container = document.createElement('div')
   const $h1 = document.createElement('h1')
   const $divider = document.createElement('div')
@@ -18,6 +19,7 @@ export function AboutPage() {
   $img.classList.add('w-full', 'h-auto')
   $img.setAttribute('src', 'img/lockdev.webp')
   $img.setAttribute('alt', 'Equipo de LockDev')
+  $main.classList.add('flex-grow')
 
   // Set content
   $h1.textContent = 'Sobre Nosotros'
@@ -41,7 +43,7 @@ export function AboutPage() {
   $flexContainer.appendChild($imgContainer)
   $container.appendChild($h1)
   $container.appendChild($divider)
-  $container.appendChild($flexContainer)
+  $main.appendChild($container)
 
-  return $container
+  return $main
 }
